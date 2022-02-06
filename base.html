@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>{% block title %}{% endblock title %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-success">
+      <a class="navbar-brand mx-3">注文管理アプリ</a>
+    <div>  
+      {% if user.is_authenticated %}     
+      <p>{{ user.username }} <a href="{% url 'logout' %}" class="link-dark m-4">ログアウト</a></p>
+      {% else %}
+      <p><a href="{% url 'login'%}" >ログイン</a></p>
+      {% endif %}
+    </nav>
+    </div>
+    <h1>{% block h1%}{% endblock h1 %}</h1>
+    {% block content %}{% endblock content %}
+  </body>
+</html>

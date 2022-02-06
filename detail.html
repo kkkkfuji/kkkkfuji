@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}注文データ　| 注文管理アプリ{% endblock %}
+{% block h1 %}注文データ{% endblock %}
+{% block content %}
+<div class="p-4 m-4 border border-success rounded">
+    <div class="row">
+        <dl class="col-4">
+            <dt class="h3">顧客</dt>
+            <dd>{{ order.customer.name }}</dd>
+            <dd>{{ order.customer.address }}</dd>
+            <dd>{{ order.customer.tel_number }}</dd>
+            <dd>{{ order.customer.mail }}</dd>
+        </dl>
+        <dl class="col-4">
+            <dt class="h3">顧客種別</dt>
+            <dd>{{ order.customer.customer_category }}</dd>
+        </dl>
+        <dl class="col-4">
+            <dt class="h3">注文日</dt>
+            <dd>{{ order.date }}</dd>
+        </dl>
+    </div>
+    <div class="row">
+        <dl class="col-4">
+            <dt class="h3">単価</dt>
+            <dd>{{ order.unit_price }}</dd>
+        </dl>
+        <dl class="col-4">
+            <dt class="h3">個数</dt>
+            <dd>{{ order.quantity }}</dd>
+        </dl>
+        <dl class="col-4">
+            <dt class="h3">商品名</dt>
+            <dd>{{ order.prodact }}</dd>
+        </dl>
+    </div>
+    <div class="row">
+        <dl class="col-12">
+            <dt class="h3">備考</dt>
+            <dd>{{ order.memo }}</dd>
+        </dl>
+    </div>
+</div>
+<a href="{% url 'list' %}">一覧に戻る</a>
+{% endblock %}

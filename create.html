@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}注文データ作成　|　注文管理アプリ{% endblock %}
+{% block h1 %}作成{% endblock %}
+{% block content %}
+    <div class="p-4">
+        <form method="post" class="p-4 m-4 border border-primary rounded">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">作成する</button>
+        </form>
+    </div>
+    <a href="{% url 'list' %}">一覧に戻る</a>
+{% endblock %}
