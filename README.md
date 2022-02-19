@@ -41,13 +41,14 @@
 ### ・注文削除画面
 ![削除画面](https://user-images.githubusercontent.com/98248779/152679927-ae5892ae-05b3-4290-9024-0a5c02707cc0.png)
 
-### ER図
+### ・ER図
 ![ER図](https://user-images.githubusercontent.com/98248779/154804171-2448fff7-f670-42a2-9efa-00fd094efa72.png)
 
-### 画面遷移図
+### ・画面遷移図
+![画面遷移図](https://user-images.githubusercontent.com/98248779/154804221-bec863e7-18ac-4693-88d3-5bd616ba8f87.png)
 
-### 業務フロー図
-
+### ・業務フロー図
+![業務フロー図](https://user-images.githubusercontent.com/98248779/154804230-908ec2f8-8c47-483c-81ea-677fa716a996.png)
 
 # 使用技術
 
