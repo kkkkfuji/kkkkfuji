@@ -42,6 +42,7 @@
 ![削除画面](https://user-images.githubusercontent.com/98248779/152679927-ae5892ae-05b3-4290-9024-0a5c02707cc0.png)
 
 ### ER図
+![ER図](https://user-images.githubusercontent.com/98248779/154804171-2448fff7-f670-42a2-9efa-00fd094efa72.png)
 
 ### 画面遷移図
 
