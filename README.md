@@ -41,6 +41,13 @@
 ### ・注文削除画面
 ![削除画面](https://user-images.githubusercontent.com/98248779/152679927-ae5892ae-05b3-4290-9024-0a5c02707cc0.png)
 
+### ER図
+
+### 画面遷移図
+
+### 業務フロー図
+
+
 # 使用技術
 
 - Django 3.2
