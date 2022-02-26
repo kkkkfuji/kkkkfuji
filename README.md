@@ -44,7 +44,7 @@
 ![削除画面](https://user-images.githubusercontent.com/98248779/152679927-ae5892ae-05b3-4290-9024-0a5c02707cc0.png)
 
 
-### ・管理画面
+### ・管理画面(新規顧客の情報追加)
 
 ![管理画面](https://user-images.githubusercontent.com/98248779/155826960-6c64835f-1058-4508-b654-a48b1dd184a0.png)
 
