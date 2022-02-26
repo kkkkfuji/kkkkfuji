@@ -19,8 +19,7 @@
 
 ### ・注文一覧画面(ログイン後表示)
 
-![注文一覧](https://user-images.githubusercontent.com/98248779/152679865-268250e3-2302-46fc-9341-bee04390ffc1.png)
-
+![注文一覧](https://user-images.githubusercontent.com/98248779/155827189-b2cd1c2d-2a48-4b0d-bc06-ae8d607f38a5.png)
 
 ### ・注文追加画面
 
