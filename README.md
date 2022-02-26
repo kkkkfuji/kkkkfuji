@@ -12,6 +12,11 @@
 
 # アプリ画面
 
+### ・管理画面
+
+![管理画面](https://user-images.githubusercontent.com/98248779/155826960-6c64835f-1058-4508-b654-a48b1dd184a0.png)
+
+
 ### ・ログイン画面
 
 ![ログイン](https://user-images.githubusercontent.com/98248779/152679792-e32b42b5-ec95-48ff-9e0f-2f662642fa23.png)
