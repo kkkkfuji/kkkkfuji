@@ -25,6 +25,9 @@
 
 ![新規追加](https://user-images.githubusercontent.com/98248779/155827323-e540de4d-ded0-45e1-bc42-9361a0fec7fb.png)
 
+### ・注文追加後画面
+![新規追加後](https://user-images.githubusercontent.com/98248779/155827394-b3202fe2-f514-45f3-b231-17a4cef43b28.png)
+
 
 ### ・検索機能
 
