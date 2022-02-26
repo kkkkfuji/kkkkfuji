@@ -36,7 +36,7 @@
 ![注文詳細ページ](https://user-images.githubusercontent.com/98248779/152679923-123e36f0-198c-477f-864f-8c5765e79ec6.png)
 
 ### ・編集画面
-![編集画面](https://user-images.githubusercontent.com/98248779/152679924-0ae7e753-c592-43a7-870d-d2d7775b804a.png)
+![編集](https://user-images.githubusercontent.com/98248779/155826509-4b0e2004-ef31-45f2-82cf-8c6604029005.png)
 
 ### ・注文削除画面
 ![削除画面](https://user-images.githubusercontent.com/98248779/152679927-ae5892ae-05b3-4290-9024-0a5c02707cc0.png)
