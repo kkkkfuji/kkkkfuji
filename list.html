@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title%}注文管理アプリ{% endblock title %}
+{% block h1%}注文一覧{% endblock %}
+{% block content %}
+{% if messages %}
+{% for message in messages %}
+<div class="text-center alert alert-success">
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+
+<div class="m-4">
+    <a href="{% url 'create' %}" class="btn btn-success my-2">新規注文を追加</a>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <th><label>顧客名： </label></th>
+                {% if not q_word %}
+                <td><input style="display:block;" name="query" value="{{ request.GET.query }}" type="text" class="mb-2"></td>
+                {% else%}
+                <td><input style="display:block;" name="query" value="{{ q_word }}" type="text" class="mb-2"></td>
+                {% endif%}
+            </tr>
+            <tr>
+                <th><label>注文日： </label></th>
+                {% if not date1 %}
+                <td><input style="display:block;" type="date" name="date1" value="" class="mb-2"></td>
+                {% else%}
+                <td><input style="display:block;" type="date" name="date1" value="{{ date1 }}" class="mb-2"></td>
+                {% endif%}
+                <td><label>〜  　</label></td>
+                {% if not date2 %}
+                <td><input style="display:block;" type="date" name="date2" value="" class="mb-2"></td>
+                {% else%}
+                <td><input style="display:block;" type="date" name="date2" value="{{ date2 }}" class="mb-2"></td>
+                {% endif%}
+            </tr>
+            <tr>
+                <th><label>顧客種別： </label></th>
+                <td>
+                <select style="display:block;" name="category" value="{{ request.GET.category }}" class="mb-2">
+                <option value="">選択してください</option>
+                <option value="企業" {% if category == '企業' %}selected{% endif %}>企業</option>
+                <option value="役所関係" {% if category == '役所関係' %}selected{% endif %}>役所関係</option>
+                <option value="個人"> {% if category == '個人' %}selected{% endif %}個人</option>
+                </select>
+                </td>
+        </table>
+        
+        <button type="submit" class="mb-4">検索する</button>
+
+    </form>
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr class="table-success">
+                <th>顧客</th>
+                <th>顧客種別</th>
+                <th>注文日</th>
+                <th>商品名</th>
+                <th>詳細</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in object_list %}
+            <tr>
+                <td>{{ order.customer.name }}</td>
+                <td>{{ order.customer.customer_category.category }}</td>
+                <td>{{ order.date | date:"Y-m-d"}}</td>
+                <td>{{ order.prodact }}</td>
+                <td><a href="{% url 'detail' order.id %}">詳細へ</a></td>
+                <td>
+                    <a href="{% url 'update' order.id %}" class="btn btn-success">編集する</a>
+                    <a href="{% url 'delete' order.id %}" class="btn btn-danger">削除する</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
