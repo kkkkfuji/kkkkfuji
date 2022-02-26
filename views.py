@@ -14,7 +14,9 @@ class OrderListView(LoginRequiredMixin,ListView):
     template_name = 'list.html'
     model = Order
 
-    def get_queryset(self):
+
+    def get_context_data(self, **kwargs):
+    # def get_queryset(self):
         # 1回目はNone
         q_word = self.request.GET.get('query')
         date1 = self.request.GET.get('date1') 
@@ -53,7 +55,17 @@ class OrderListView(LoginRequiredMixin,ListView):
             object_list = Order.objects.filter(**keywords)
         else:
             object_list = Order.objects.all()
-        return object_list
+        # return object_list
+
+        context = super().get_context_data(**kwargs)
+        context['object_list'] = object_list
+        context['q_word'] = q_word
+        context['date1'] = date1
+        context['date2'] = date2
+        context['category'] = category
+
+        return context
+
 
 class OrderDetailView(LoginRequiredMixin,DetailView):
     template_name = 'detail.html'
